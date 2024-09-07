@@ -1,6 +1,11 @@
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-black h-screen text-white text-6xl text-center">Home</div>
+    <div className="h-screen home">
+      <Image 
+      src="" 
+      alt='home hero background' />
+    </div>
   );
 }
