@@ -4,13 +4,13 @@ import Image from 'next/image'
 
 export const Header = () => {
   return (
-    <header className='absolute top-0 w-full z-10 py-4 px-10 flex justify-between items-center'>
+    <header className='absolute top-0 w-full z-10 py-0 px-10 flex justify-between items-center backdrop-blur-md bg-white bg-opacity-5'>
       <div>
         <Link href='/'>
           <Image
             src='/images/logo.png'
-            width={150}
-            height={150}
+            width={170}
+            height={170}
             alt='Dunespot'
           />
         </Link>
