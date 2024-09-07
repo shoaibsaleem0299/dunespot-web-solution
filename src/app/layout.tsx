@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <Script
+          src="https://kit.fontawesome.com/7379bf4ae1.js"
+          crossOrigin="anonymous"
+          strategy="afterInteractive" // Load this script after the page is interactive
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

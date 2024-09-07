@@ -4,8 +4,11 @@ export default function Home() {
   return (
     <div className="h-screen home">
       <Image 
-      src="" 
-      alt='home hero background' />
+      src="/images/home-bg.jpg"
+      layout="fill"
+      objectFit="cover"
+      alt='home hero background' 
+      />
     </div>
   );
 }
