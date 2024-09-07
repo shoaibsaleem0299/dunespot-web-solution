@@ -1,8 +1,9 @@
 import Image from "next/image";
+import AboutSection from "./components/aboutus";
 
 export default function Home() {
   return (
-    <div className="h-screen home">
+    <>    <div className="h-screen home">
       <video
         autoPlay
         muted
@@ -21,5 +22,8 @@ export default function Home() {
       className="absolute top-[15%]" 
       />
     </div>
+    <AboutSection />
+    </>
+
   );
 }
