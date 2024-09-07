@@ -4,13 +4,13 @@ import Image from 'next/image'
 
 export const Header = () => {
   return (
-    <header className='absolute top-0 w-full z-10 py-0 px-10 flex justify-between items-center backdrop-blur-md bg-white bg-opacity-5'>
+    <header className='absolute top-0 w-full z-10 py-2 px-10 flex justify-between items-center backdrop-blur-sm shadow-lg bg-white bg-opacity-5'>
       <div>
         <Link href='/'>
           <Image
             src='/images/logo.png'
-            width={170}
-            height={170}
+            width={180}
+            height={180}
             alt='Dunespot'
           />
         </Link>
@@ -24,7 +24,7 @@ export const Header = () => {
           <li className='px-4 py-2 font-semibold hover:text-white'><Link href='/'>Services</Link></li>
           <li className='px-4 py-2 font-semibold hover:text-white'><Link href='/'>Contact Us</Link></li>
           <li className='px-4 py-2 font-semibold '><Link href='/'>
-            <i className="fa-solid fa-magnifying-glass text-black text-2xl px-2"></i>
+            <i className="fa-solid fa-magnifying-glass text-black text-2xl px-2 hover:text-white"></i>
           </Link></li>
         </ul>
       </nav>

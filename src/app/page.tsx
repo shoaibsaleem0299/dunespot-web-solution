@@ -8,17 +8,18 @@ export default function Home() {
         muted
         loop
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="w-full h-full object-cover opacity-90"
       >
         <source src="/videos/video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      {/* <Image 
-      src="/images/home-bg.jpg"
-      layout="fill"
-      objectFit="cover"
-      alt='home hero background' 
-      /> */}
+      <Image 
+      src="/images/hero-text.png"
+      width={700}
+      height={700}
+      alt='home hero background'
+      className="absolute top-[15%]" 
+      />
     </div>
   );
 }
