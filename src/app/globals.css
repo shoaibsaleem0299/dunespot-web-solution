@@ -6,3 +6,28 @@
 *, body {
     overflow-x: hidden;
 }
+
+
+.hexagon {
+    width: 100%;
+    padding-bottom: 86.6%;
+    position: relative;
+  }
+  
+  .hexagon::before,
+  .hexagon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    padding-bottom: 86.6%;
+    background-color: inherit;
+  }
+  
+  .hexagon::before {
+    transform: rotate(60deg);
+  }
+  
+  .hexagon::after {
+    transform: rotate(-60deg);
+  }
+  

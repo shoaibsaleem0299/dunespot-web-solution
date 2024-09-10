@@ -1,5 +1,7 @@
 import Image from "next/image";
 import AboutSection from "./components/aboutus";
+import WhatWeDoSection from "./components/service";
+import TransformSection from "./components/blog";
 
 export default function Home() {
   return (
@@ -23,7 +25,8 @@ export default function Home() {
       />
     </div>
     <AboutSection />
-    <h1>lehoo</h1>
+    <WhatWeDoSection />
+    <TransformSection />
     </>
 
   );
