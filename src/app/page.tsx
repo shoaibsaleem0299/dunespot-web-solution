@@ -23,6 +23,7 @@ export default function Home() {
       />
     </div>
     <AboutSection />
+    <h1>lehoo</h1>
     </>
 
   );
