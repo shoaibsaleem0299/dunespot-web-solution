@@ -3,31 +3,72 @@
 @tailwind utilities;
 
 
-*, body {
+ body {
     overflow-x: hidden;
 }
 
+.hex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+}
 
-.hexagon {
-    width: 100%;
-    padding-bottom: 86.6%;
-    position: relative;
-  }
-  
-  .hexagon::before,
-  .hexagon::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    padding-bottom: 86.6%;
-    background-color: inherit;
-  }
-  
-  .hexagon::before {
-    transform: rotate(60deg);
-  }
-  
-  .hexagon::after {
-    transform: rotate(-60deg);
-  }
-  
+.hex {
+  position: relative;
+  margin: 1.5em;
+  width: 200px;
+  height: 160px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.hex:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.ribbon {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  color: #fff;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.web-dev { background: linear-gradient(to bottom right, #65e669, #2E7D32); }
+.mobile-app { background: linear-gradient(to bottom right, #eed99a, #FFA000); }
+.seo { background: linear-gradient(to bottom right, #eb8b85, #D32F2F); }
+.ui-ux { background: linear-gradient(to bottom right, #6cb3ec, #1976D2); }
+.e-commerce { background: linear-gradient(to bottom right, #ee8262, #E64A19); }
+.digital-marketing { background: linear-gradient(to bottom right, #c467d4, #7B1FA2); }
+.content-writing { background: linear-gradient(to bottom right, #7987d8, #303F9F); }
+.cloud-solutions { background: linear-gradient(to bottom right, #18d5ee, #0097A7); }
+.data-analytics { background: linear-gradient(to bottom right, #7ddb81, #2E7D32); }
+.tech-support { background: linear-gradient(to bottom right, #eeb359, #F57C00); }
+
+
+
+.whatwedosection{
+  background-image: url('../../public/images/map-bg.png');
+  /* background-size: 800px 400px; */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  z-index: 1;
+}

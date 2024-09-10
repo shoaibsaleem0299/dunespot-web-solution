@@ -3,7 +3,7 @@ import React from 'react';
 
 const AboutSection: React.FC = () => {
   return (
-    <div className="about-section bg-gray-100 lg:px-12 px-4 pt-10 flex flex-col md:flex-row flex-wrap w-full">
+    <div className="about-section bg-gray-100 lg:px-12 px-4 lg:pt-28 flex flex-col md:flex-row flex-wrap w-full">
       <div className="about-left w-full md:w-1/2 ">
         <div className="hidden md:block z-0 absolute -left-[22%]">
           <Image
@@ -67,7 +67,7 @@ const AboutSection: React.FC = () => {
       </div>
       <div className="about-right w-full md:w-1/2 mt-8 md:mt-0">
         <Image
-          className="absolute lg:-right-[8%] mx-auto md:mx-0"
+          className="absolute lg:-right-[5%] mx-auto md:mx-0"
           src="/images/burj.png"
           alt="burj"
           width={1000}

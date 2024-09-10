@@ -3,7 +3,7 @@ import React from 'react';
 
 const TransformSection: React.FC = () => {
   return (
-    <div className="relative bg-white py-12 px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
+    <div className="relative bg-gray-100 py-12 px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
       {/* Left Section */}
       <div className="relative w-full lg:w-2/5 text-white">
         <div className="bg-green-900 p-8 rounded-lg shadow-lg">
