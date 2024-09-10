@@ -3,10 +3,10 @@ import React from 'react';
 
 const TransformSection: React.FC = () => {
   return (
-    <div className="relative bg-gray-100 py-12 px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
+    <div className=" bg-gray-100 py-12 px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between h-screen">
       {/* Left Section */}
       <div className="relative w-full lg:w-2/5 text-white">
-        <div className="bg-green-900 p-8 rounded-lg shadow-lg">
+        <div className="bg-green-900  p-8 py-12 rounded-lg shadow-lg">
           <h2 className="text-3xl lg:text-5xl font-bold mb-4">TRANSFORM YOUR DIGITAL PRESENCE</h2>
           <p className="text-lg lg:text-xl mb-8">Boost Your Business Online</p>
           <button className="bg-green-700 text-white font-bold py-2 px-4 rounded-md hover:bg-green-800">
